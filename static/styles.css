@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 450px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: left;
+}
+
+/* Chat Header */
+.chat-container h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Chat Box */
+#chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background: #f8f8f8;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Messages */
+p {
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* User Messages */
+.user-message {
+    background: #007bff;
+    color: white;
+    text-align: right;
+    margin-left: auto;
+}
+
+/* Bot Messages */
+.bot-message {
+    background: #f1f1f1;
+    color: #333;
+    text-align: left;
+}
+
+/* Input Box */
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Send Button */
+button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Notification Popup */
+#notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ff9800;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hidden {
+    display: none;
+}
